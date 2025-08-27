@@ -1,0 +1,22 @@
+{
+  "name": "tiny-boi-css",
+  "version": "1.0.0",
+  "description": "A tiny, fun spinoff of Tailwind CSS.",
+  "main": "dist/output.css",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["css", "utility", "tailwind", "utility-first", "frontend", "spinoff"],
+  "author": "pushncode",
+  "license": "ISC",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/puskarpy/tiny-boi-css"
+  },
+  "homepage": "https://github.com/puskarpy/tiny-boi-css#readme"
+}
