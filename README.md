@@ -46,8 +46,7 @@ Then use the classes:
 For full list of classes, check the dist/output.css
 
 ## Contributions
-Contributions are welcome! Even though I just made it as a fun projecy, if you find issues or want to add utilities, feel free to open a PR.
-It is a fun project that I made.
+Contributions are welcome! Even though I just made it as a fun project, if you find issues or want to add utilities, feel free to open a PR.
 
 ## Disclaimer
 Tiny-Boi-CSS is inspired by Tailwind CSS, but all code is original and independently implemented. I just made it because I was bored and wanted to do something.
