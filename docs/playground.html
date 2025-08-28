@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+
+    <title>Playground for tiny-boi-css</title>
+
+    <style>
+        #editor{
+            resize:none;
+            overflow:scroll;
+            outline: none;
+        }
+        #preview{
+            min-width: 550px;
+            max-width: 550px;
+            overflow:scroll;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <main>
+        <h1 class="font-arial ml-4 text-blue">Playground</h1>
+        <div class="px-4 flex justify-between py-8 gap-6">
+            <textarea cols="50" rows="20" class="border-1 border-light-gray p-2 text-large rounded-lg" placeholder="Type html here...." id="editor"></textarea>
+            <div class="bg-light-gray rounded-lg p-4" id="preview">Preview</div>
+        </div>
+    </main>
+</body>
+<script>
+    let editor = document.querySelector('#editor');
+    let preview = document.querySelector('#preview');
+
+    editor.addEventListener('input', ()=>{
+        preview.innerHTML = editor.value;
+    })
+</script>
+</html>

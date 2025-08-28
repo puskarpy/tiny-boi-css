@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>tiny-boi-css</title>
+
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        .font-robo{
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
+
+</head>
+<body class="font-robo">
+   <header class="fixed z-10 bg-white top-0 right-0 left-0 py-4 font-semibold px-12 flex items-center border-b-2 border-gray-200/50 justify-between">
+    <div><h1 class="text-2xl bg-radial from-blue-500 to-purple-500 text-transparent bg-clip-text">tiny-boi-css</h1></div>
+    <nav class="flex gap-12 list-none">
+        <li><a class="hover:text-[#3b82f6] transition-all ease-in-out" href="#start">Getting Started</a></li>
+        <li><a class="hover:text-[#3b82f6] transition-all ease-in-out" href="#utilities">Utilities</a></li>
+        <li><a class="hover:text-[#3b82f6] transition-all ease-in-out" href="#examples">Examples</a></li>
+        <li><a class="hover:text-[#3b82f6] transition-all ease-in-out" href="./playground.html">Playground</a></li>
+    </nav>
+   </header>
+   <main class="mt-18 max-w-6xl mx-auto py-8 flex flex-col gap-6">
+    <div class="bg-yellow-200 text-yellow-900 text-center py-2 px-4 font-semibold">
+  ⚡ Tiny-Boi-CSS is just a fun project! Inspired by Tailwind, built for experimentation.
+    </div>
+
+    <!-- Home -->
+
+    <section id="home">
+        <div class="px-4 py-12 flex flex-col  items-center ">
+            <h2 class="text-6xl font-bold bg-radial from-blue-500 to-purple-500 text-transparent bg-clip-text">tiny-boi-css</h2>
+            <p class="mt-12 text-xl font-semibold">A tiny, fun spinoff of Tailwind CSS.</p>
+            <a href="#start" class="mt-20 bg-blue-500 text-white hover:bg-blue-600 py-2 px-4 rounded-lg">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Getting Started -->
+
+    <section id="start">
+        <div class="px-4 py-12 flex flex-col">
+            <h3 class="text-4xl font-bold">Getting Started</h3>
+            <p class="mt-12 text-lg">Add tiny-boi-css to your project immediately.</p>
+            <div class="flex flex-col gap-6 mt-12">
+                <div class="border-[1px] border-gray-300/50 py-8 hover:shadow-lg hover:border-blue-500 transition-all ease-in-out p-4 flex flex-col gap-2 rounded-md">
+                    <p class="text-2xl font-semibold">Installation</p>
+                    <p class="mt-8 text-lg text-gray-500">Install:</p>
+                    <div class="bg-gray-900 text-white overflow-x-auto rounded-md">
+                        <code class="block p-4 font-mono">
+                            npm install tiny-boi-css
+                        </code>
+                    </div>
+                </div>
+                <div class="border-[1px] hover:shadow-lg py-8 hover:border-blue-500 transition-all ease-in-out border-gray-300/50 p-4 flex flex-col gap-2 rounded-md">
+                    <p class="text-2xl font-semibold">Usage</p>
+                                        <p class="mt-8 text-lg text-gray-500">Include the CSS in your project:</p>
+                    <div class="bg-gray-900 text-white overflow-x-auto rounded-md">
+                        <code class="block p-4 font-mono">
+                            &lt;link rel="stylesheet" href="node_modules/tiny-boi-css/dist/output.css"&gt;
+                        </code>
+                    </div>
+                    <p class="mt-8 text-lg text-gray-500">Then use the classes:</p>
+                    <div class="bg-gray-900 text-white overflow-x-auto rounded-md">
+                        <code class="block p-4 font-mono">
+                        &lt;div class="p-4 m-2 rounded-lg border-2"&gt; Hello Tiny-Boi-CSS! &lt;/div&gt;                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Utilities -->
+
+    <section id="utilities">
+        <div class="flex flex-col gap-6">
+            <h2 class="text-4xl font-bold">Utility Classes</h2>
+            <p class="text-lg text-gray-500">Core utilities</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="flex flex-col gap-4 border-[1px] border-gray-300 hover:shadow-lg hover:border-blue-500 transition-all ease-in-out rounded-lg p-4">
+                    <p class="text-xl font-semibold">Spacing</p>
+                    <p class="text-gray-500">Margin and padding utilities</p>
+                    <div class="flex flex-col mt-8">
+                        <div class="flex border-b-[1px] p-2 border-gray-300 items-center gap-8 mb-4">
+                            <p class="text-xs font-mono text-blue-500 bg-gray-200/50 px-2 py-[1px] rounded-lg">m-2, m-4, m-6, m-8</p>
+                            <p> - Margin </p>
+                        </div>
+                        <div class="flex border-b-[1px] p-2 border-gray-300 items-center gap-8 mb-4">
+                            <p class="text-xs font-mono text-blue-500 bg-gray-200/50 px-2 py-[1px] rounded-lg">p-2, p-4, p-6, p-8</p>
+                            <p> - Padding </p>
+                        </div>
+                        <div class="flex border-b-[1px] p-2 border-gray-300 items-center gap-8 mb-4">
+                            <p class="text-xs font-mono text-blue-500 bg-gray-200/50 px-2 py-[1px] rounded-lg">mx-2, px-8</p>
+                            <p> - Horizontal </p>
+                        </div>
+                        <div class="flex  p-2 items-center gap-8">
+                            <p class="text-xs font-mono text-blue-500 bg-gray-200/50 px-2 py-[1px] rounded-lg">my-2, py-8</p>
+                            <p> - Vertical </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4 border-[1px] border-gray-300 hover:shadow-lg hover:border-blue-500 transition-all ease-in-out rounded-lg p-4">
+                    <p class="text-xl font-semibold">Colors</p>
+                    <p class="text-gray-500">Text and background colors</p>
+                    <div class="flex flex-col mt-8">
+                        <div class="flex border-b-[1px] p-2 border-gray-300 items-center mb-4">
+                            <p class="text-xs font-mono text-blue-500 bg-gray-200/50 px-2 py-[1px] rounded-lg">text-blue, text-red, text-green</p>
+                        </div>
+                        <div class="flex border-b-[1px] p-2 border-gray-300 items-center gap-8 mb-4">
+                            <p class="text-xs font-mono text-blue-500 bg-gray-200/50 px-2 py-[1px] rounded-lg">bg-blue, bg-red, bg-green</p>
+                        </div>
+                        <div class="flex border-b-[1px] p-2 border-gray-300 items-center gap-8 mb-4">
+                            <p class="text-xs font-mono text-blue-500 bg-gray-200/50 px-2 py-[1px] rounded-lg">text-gray-100 to text-gray-900</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4 border-[1px] border-gray-300 hover:shadow-lg hover:border-blue-500 transition-all ease-in-out rounded-lg p-4">
+                    <p class="text-xl font-semibold">Layout</p>
+                    <p class="text-gray-500">Flexbox and positioning</p>
+                    <div class="flex flex-col mt-8">
+                        <div class="flex border-b-[1px] p-2 border-gray-300 items-center mb-4">
+                            <p class="text-xs font-mono text-blue-500 bg-gray-200/50 px-2 py-[1px] rounded-lg">flex, flex-col, flex-row</p>
+                        </div>
+                        <div class="flex border-b-[1px] p-2 border-gray-300 items-center gap-8 mb-4">
+                            <p class="text-xs font-mono text-blue-500 bg-gray-200/50 px-2 py-[1px] rounded-lg">justify-center, justify-between, justify-aaround</p>
+                        </div>
+                        <div class="flex border-b-[1px] p-2 border-gray-300 items-center gap-8 mb-4">
+                            <p class="text-xs font-mono text-blue-500 bg-gray-200/50 px-2 py-[1px] rounded-lg">items-center, items-start, items-end</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4 border-[1px] border-gray-300 hover:shadow-lg hover:border-blue-500 transition-all ease-in-out rounded-lg p-4">
+                    <p class="text-xl font-semibold">Typography</p>
+                    <p class="text-gray-500">Text styling utilities</p>
+                    <div class="flex flex-col mt-8">
+                        <div class="flex border-b-[1px] p-2 border-gray-300 items-center mb-4">
+                            <p class="text-xs font-mono text-blue-500 bg-gray-200/50 px-2 py-[1px] rounded-lg">text-small, text-large, text-xl</p>
+                        </div>
+                        <div class="flex border-b-[1px] p-2 border-gray-300 items-center gap-8 mb-4">
+                            <p class="text-xs font-mono text-blue-500 bg-gray-200/50 px-2 py-[1px] rounded-lg">font-bold, font-semibold</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Examples -->
+
+    <section id="examples">
+        <div class="mt-8 flex flex-col gap-6">
+            <h3 class="text-3xl font-bold">Examples</h3>
+            <p class="text-lg text-gray-500">See tiny-boi-css in action</p>
+            <div class="border-[1px] border-gray-300 hover:shadow-lg hover:border-blue-500 transition-all ease-in-out p-4 rounded-lg py-12">
+                <p class="text-2xl font-bold mb-6">Button Component</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <div class="bg-gray-200 p-4 flex justify-center rounded-lg">
+                        <button class="p-2 bg-blue-500 rounded-lg">Click me!</button>
+                    </div>
+                    <div class="bg-gray-900 text-white p-2 rounded-lg">
+                        <code class="">
+                            &lt;button class="p-2 bg-blue rounded-lg"&gt;Click me!&lt;/button&gt;
+                        </code>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-[1px] border-gray-300 p-4 rounded-lg py-12">
+                <p class="text-2xl font-bold mb-6">Card Component</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <div class="bg-gray-200 p-4 flex justify-center rounded-lg">
+                        <div class="bg-white border-[1px] border-gray-200 hover:shadow-lg hover:border-blue-500 transition-all ease-in-out p-4 rounded-lg">
+                            <p class="font-xl font-bold">Card Title</p>
+                            <p class="text-gray-500 mt-4">Some quick example text to build on the card title.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-900 text-white py-2 px-4 rounded-lg">
+                        <code class="">
+                           <p class="mb-2"> &lt;div class="bg-white border-[1px] border-gray-200 p-4 rounded-lg"&gt;</p>
+                           <p class="mb-2"> &lt;p class="font-xl font-bold"&gt;Card Title&lt;/p&gt;</p>
+                           <p class="mb-2"> &lt;p class="text-gray-500 mt-4"&gt;Some quick example text to build on the card title.&lt;/p&gt;</p>
+                        &lt;/div&gt;                        
+                    </code>
+                    </div>
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </section>
+   </main>
+   <footer>
+    <div class="bg-gray-900 text-white p-12 flex justify-center text-lg">
+        © 2025 tiny-boi-css. Made by<a class="hover:text-blue-500" href="https://www.pushkarniraula.com.np"> Pushkar Niraula</a>.
+    </div>
+   </footer>
+</body>
+</html>
